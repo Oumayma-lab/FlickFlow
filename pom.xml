@@ -12,6 +12,8 @@
   <modules>
     <module>auth-service</module>
     <module>movie-service</module>
+    <module>rating-service</module>
+    <module>history-service</module>
   </modules>
 
   <parent>

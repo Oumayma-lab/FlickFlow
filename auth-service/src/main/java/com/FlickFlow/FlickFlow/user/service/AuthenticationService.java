@@ -36,7 +36,7 @@ public class AuthenticationService {
             throw new Exception("Incorrect username or password", e);
         }
 
-        final UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+        CustomUserDetails userDetails = (CustomUserDetails) userDetailsService.loadUserByUsername(username);
         final String jwt = jwtUtil.generateToken(userDetails);
 
         Session session = new Session();

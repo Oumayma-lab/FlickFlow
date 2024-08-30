@@ -7,6 +7,7 @@ import com.FlickFlow.FlickFlow.user.dto.userDto;
 import com.FlickFlow.FlickFlow.user.entity.Session;
 import com.FlickFlow.FlickFlow.user.repository.SessionRepository;
 import com.FlickFlow.FlickFlow.user.service.AuthenticationService;
+import com.FlickFlow.FlickFlow.user.service.CustomUserDetails;
 import com.FlickFlow.FlickFlow.user.service.MyUserDetailsService;
 import com.FlickFlow.FlickFlow.user.service.userService;
 import lombok.Getter;
@@ -52,7 +53,10 @@ public class AuthController {
     public ResponseEntity<?> createAuthenticationToken(@RequestBody userDto userDto) {
         try {
             String jwt = authenticationService.authenticate(userDto.getEmail(), userDto.getPassword());
-            return ResponseEntity.ok(new JwtResponse(jwt, userDto.getEmail()));
+            CustomUserDetails userDetails = (CustomUserDetails) userDetailsService.loadUserByUsername(userDto.getEmail());
+            int userId = userDetails.getId();
+
+            return ResponseEntity.ok(new JwtResponse(jwt, userDto.getEmail(), userId));
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid email or password");
         }
@@ -115,7 +119,7 @@ public class AuthController {
 
 
     @PostMapping("/validateToken")
-    public ResponseEntity<?> validateToken(@RequestBody String token) {
+    public ResponseEntity<?> validateToken(@RequestHeader("Authorization") String token) {
         try {
             String username = jwtUtil.extractUsername(token);
             if (username != null && jwtUtil.isTokenValid(token, username)) {
@@ -128,31 +132,6 @@ public class AuthController {
         }
     }
 
-    @GetMapping("/validateT")
-    public ResponseEntity<?> validateTokenForCurrentUser(@RequestHeader("Authorization") String token) {
-        token = token.substring(7); // Remove "Bearer " from the token
-        UserDetails currentUser = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-
-        if (jwtUtil.validateToken(token, currentUser)) {
-            return ResponseEntity.ok("Token is valid for user: " + currentUser.getUsername());
-        } else {
-            return ResponseEntity.status(401).body("Invalid Token");
-        }
-    }
-
-
-//    @GetMapping("/validate")
-//    public ResponseEntity<?> validateToken(@RequestHeader("Authorization") String token) {
-//        if (jwtUtil.validateToken(token)) {
-//            String username = jwtUtil.extractUsername(token);
-//            UserDetails userDetails = userDetailsService.loadUserByUsername(username);
-//            return ResponseEntity.ok(userDetails);
-//        } else if (token != null ) {
-//            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("empty");
-//        } else {
-//            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid or expired token.");
-//        }
-//    }
 
     @Getter
     public static class ApiResponse {

@@ -73,6 +73,16 @@ public class JwtUtil {
         return (username.equals(tokenUsername) && !isTokenExpired(token));
     }
 
+    public Claims extractClaims(String token) {
+        return Jwts.parser()
+                .setSigningKey(secret)
+                .parseClaimsJws(token)
+                .getBody();
+    }
+    public String extractUserId(String token) {
+        Claims claims = extractClaims(token);
+        return claims.get("userId", String.class); // Assuming userId is stored as a claim in the JWT
+    }
 
 //    public Boolean validateToken(String token) {
 //        try {

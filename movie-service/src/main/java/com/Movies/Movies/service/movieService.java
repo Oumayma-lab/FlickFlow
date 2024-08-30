@@ -99,4 +99,11 @@ public class movieService {
         );
     }
 
+
+    public Movie getMovieById(Integer movieId) {
+        return movieRepository.findById(movieId)
+                .orElseThrow(() -> new RuntimeException("Movie not found"));
+    }
+
+
 }

@@ -5,36 +5,126 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b05256a-9529-4b77-926d-a4be92f06ee4" name="Changes" comment="services integration">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2389f779-cb61-4ce4-ada3-402adc66185d.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2389f779-cb61-4ce4-ada3-402adc66185d/storage_v2/_src_/schema/flickflow.uQ-1Rw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2389f779-cb61-4ce4-ada3-402adc66185d/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2389f779-cb61-4ce4-ada3-402adc66185d/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2389f779-cb61-4ce4-ada3-402adc66185d/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2389f779-cb61-4ce4-ada3-402adc66185d/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/FlickFlowApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/config/JwtRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/config/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/api/Request/AuthRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/api/Request/JwtRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/api/Response/AuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/api/Response/JwtResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/dto/roleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/dto/userDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/entity/role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/entity/user.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/repository/roleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/repository/userRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/service/MyUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/service/roleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/service/userService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/templates/addUser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/templates/usersDetails.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/test/java/com/FlickFlow/FlickFlow/FlickFlowApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/service/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/target/auth-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/target/auth-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/service/CustomUserDetails.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/target/surefire-reports/TEST-com.FlickFlow.FlickFlow.FlickFlowApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/target/surefire-reports/com.FlickFlow.FlickFlow.FlickFlowApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/target/test-classes/com/FlickFlow/FlickFlow/FlickFlowApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/src/main/java/com/FlickFlow/History/HistoryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/src/main/java/com/FlickFlow/History/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/src/main/java/com/FlickFlow/History/history/controller/HistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/src/main/java/com/FlickFlow/History/history/entity/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/src/main/java/com/FlickFlow/History/history/repository/HistoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/src/main/java/com/FlickFlow/History/history/service/HistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/src/main/resources/templates/addUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/src/main/resources/templates/usersDetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/src/test/java/com/FlickFlow/FlickFlow/FlickFlowApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/classes/com/FlickFlow/History/HistoryApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/classes/com/FlickFlow/History/config/AppConfig$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/classes/com/FlickFlow/History/config/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/classes/com/FlickFlow/History/history/controller/HistoryController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/classes/com/FlickFlow/History/history/entity/History$HistoryBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/classes/com/FlickFlow/History/history/entity/History.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/classes/com/FlickFlow/History/history/repository/HistoryRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/classes/com/FlickFlow/History/history/service/HistoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/classes/templates/addUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/classes/templates/usersDetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/history-service/target/test-classes/com/FlickFlow/FlickFlow/HistoryApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/movie-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/surefire-reports/TEST-com.Movies.Movies.MoviesApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/surefire-reports/com.Movies.Movies.MoviesApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/target/test-classes/com/Movies/Movies/MoviesApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/src/main/java/com/rating/rating/RatingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/src/main/java/com/rating/rating/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/src/main/java/com/rating/rating/controller/ratingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/src/main/java/com/rating/rating/dto/RatingDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/src/main/java/com/rating/rating/entity/Rating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/src/main/java/com/rating/rating/repository/RatingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/src/main/java/com/rating/rating/service/ratingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/src/test/java/com/rating/rating/RatingApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/target/classes/com/rating/rating/RatingApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/target/classes/com/rating/rating/config/AppConfig$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/target/classes/com/rating/rating/config/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/target/classes/com/rating/rating/controller/ratingController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/target/classes/com/rating/rating/dto/RatingDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/target/classes/com/rating/rating/entity/Rating$RatingBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/target/classes/com/rating/rating/entity/Rating.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/target/classes/com/rating/rating/repository/RatingRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating-service/target/classes/com/rating/rating/service/ratingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/config/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/config/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/api/Response/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/api/Response/JwtResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/service/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/service/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/service/userService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/service/userService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/config/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/config/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/config/ApiTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/config/TmdbConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/controller/GenreController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/controller/MovieController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/dto/GenreDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/dto/MovieDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/dto/MovieSearchResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/entity/genre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/entity/movie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/repository/MovieApiResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/repository/genreRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/repository/movieRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/results/PopularMoviesResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/service/MovieService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/movie/service/TmdbService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/Request/AuthRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/Request/AuthResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/Request/JwtRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/Request/JwtResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/Request/LoginRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/Request/RefreshTokenRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/Request/SignInRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/Request/SignUpRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/api/Response/JwtResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/api/Response/JwtResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/controller/AuthController$ApiResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/controller/AuthController$ApiResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/controller/userController$ApiResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/controller/userController$ResponseMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/controller/userController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/service/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/service/AuthenticationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/service/MyUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/service/MyUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/service/userService.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/com/FlickFlow/FlickFlow/user/service/userService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/com/Movies/Movies/config/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/com/Movies/Movies/config/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/com/Movies/Movies/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/com/Movies/Movies/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/com/Movies/Movies/repository/movieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/com/Movies/Movies/repository/movieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/com/Movies/Movies/service/movieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/com/Movies/Movies/service/movieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/com/Movies/Movies/config/JwtRequestFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/com/Movies/Movies/config/JwtRequestFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/com/Movies/Movies/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/com/Movies/Movies/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/com/Movies/Movies/service/movieService.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/target/classes/com/Movies/Movies/service/movieService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +134,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -62,43 +159,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "jbr-17",
-    "last_opened_file_path": "C:/Users/amara/IdeaProjects/FlickFlow-Back",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;jbr-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/amara/IdeaProjects/FlickFlow/history-service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.FlickFlow.FlickFlow.user.api.Response" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\amara\IdeaProjects\FlickFlow\history-service" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\amara\IdeaProjects\FlickFlow\src\main\java\com\FlickFlow" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MoviesApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.FlickFlowApplication">
     <configuration name="FlickFlowApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="auth-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.FlickFlow.FlickFlow.FlickFlowApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HistoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="history-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.FlickFlow.History.HistoryApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,6 +233,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RatingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="rating-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rating.rating.RatingApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,7 +264,19 @@
       <workItem from="1724412685189" duration="2388000" />
       <workItem from="1724448263624" duration="594000" />
       <workItem from="1724495211411" duration="2934000" />
-      <workItem from="1724521494449" duration="16522000" />
+      <workItem from="1724521494449" duration="16960000" />
+      <workItem from="1724589542696" duration="3546000" />
+      <workItem from="1724602796829" duration="1476000" />
+      <workItem from="1724613891391" duration="17512000" />
+      <workItem from="1724668403887" duration="7691000" />
+      <workItem from="1724682619124" duration="4869000" />
+      <workItem from="1724696732267" duration="7837000" />
+      <workItem from="1724757491490" duration="4544000" />
+      <workItem from="1724766700551" duration="4765000" />
+      <workItem from="1724792622194" duration="5072000" />
+      <workItem from="1724872372113" duration="5673000" />
+      <workItem from="1724931709018" duration="1237000" />
+      <workItem from="1725015803143" duration="990000" />
     </task>
     <task id="LOCAL-00001" summary="services integration">
       <option name="closed" value="true" />
@@ -146,7 +286,31 @@
       <option name="project" value="LOCAL" />
       <updated>1724544160567</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="services integration">
+      <option name="closed" value="true" />
+      <created>1724544373621</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724544373621</updated>
+    </task>
+    <task id="LOCAL-00003" summary="services integration">
+      <option name="closed" value="true" />
+      <created>1724544379782</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724544379782</updated>
+    </task>
+    <task id="LOCAL-00004" summary="services integration">
+      <option name="closed" value="true" />
+      <created>1724544385102</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724544385102</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +340,21 @@
           <line>7</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/FlickFlow/FlickFlow/user/service/userService.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/history-service/src/main/java/com/FlickFlow/History/HistoryApplication.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -44,7 +44,7 @@ public class SecurityConfig  {
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(authz -> authz
                         .requestMatchers("/auth/**").permitAll()
-                       // .requestMatchers("/movies/**").permitAll()
+                        .requestMatchers("/public/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class)

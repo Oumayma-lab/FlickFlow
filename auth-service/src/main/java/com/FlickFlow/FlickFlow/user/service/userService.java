@@ -25,6 +25,7 @@ public class userService {
     private final userRepository userRepository;
     private BCryptPasswordEncoder passwordEncoder;
 
+
     @Autowired
     public userService(userRepository userRepository, BCryptPasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
@@ -39,34 +40,6 @@ public class userService {
             throw new RuntimeException("Invalid credentials");
         }
     }
-
-//public String authenticate(String username, String password) throws Exception {
-//    try {
-//        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
-//    } catch (BadCredentialsException e) {
-//        throw new Exception("Incorrect username or password", e);
-//    }
-//
-//    final UserDetails userDetails = userDetailsService.loadUserByUsername(username);
-//    final String jwt = jwtUtil.generateToken(userDetails);
-//
-//    Session session = new Session();
-//    session.setToken(jwt);
-//    session.setUsername(username);
-//    session.setCreatedAt(new Date());
-//    session.setExpiresAt(new Date(System.currentTimeMillis() + jwtUtil.JWT_EXPIRATION_MS));
-//    sessionRepository.save(session);
-//
-//    return jwt;
-//}
-
-//    public void logout(String token) {
-//        Optional<Session> session = sessionRepository.findByToken(token);
-//        session.ifPresent(s -> {
-//            s.setRevoked(true);
-//            sessionRepository.save(s);
-//        });
-//    }
 
     public userDto register(userDto userDTO) {
         if (userDTO.getPassword() != null) {
@@ -102,7 +75,6 @@ public class userService {
         Optional<user> user = userRepository.findById(id);
         return user.map(this::convertToDTO).orElse(null);
     }
-
     public userDto updateUser(int id, userDto userDTO) {
         user user = userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("User not found"));
@@ -137,10 +109,15 @@ public class userService {
         return dto;
     }
 
-//    public List<movie> getRecommendations(int userId) {
-//        user user = userRepository.findByUserId(userId);
-//        List<String> preferences = user.getPreferences();
-//        return movieRepository.findByGenresIn(preferences);
-//    }
+
+    public user convertToEntity(userDto userDto) {
+        user user = new user();
+        user.setUserId(userDto.getUserId());
+        user.setUsername(userDto.getUsername());
+        user.setEmail(userDto.getEmail());
+        user.setFirstName(userDto.getFirstName());  // Ensure this uses `userDto`
+        user.setLastName(userDto.getLastName());    // Ensure this uses `userDto`
+        return user;
+    }
 
 }
