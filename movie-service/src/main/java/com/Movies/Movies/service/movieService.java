@@ -106,4 +106,10 @@ public class movieService {
     }
 
 
+    public List<MovieDetailsDTO> getRecommendedMovieDetails(List<Integer> movieIds) {
+        return movieIds.stream()
+                .map(this::fetchMovieDetails)
+                .collect(Collectors.toList());
+    }
+
 }

@@ -14,6 +14,7 @@
     <module>movie-service</module>
     <module>rating-service</module>
     <module>history-service</module>
+    <module>recommendation-service</module>
   </modules>
 
   <parent>

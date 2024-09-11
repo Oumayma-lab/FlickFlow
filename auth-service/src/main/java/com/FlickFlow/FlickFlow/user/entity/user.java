@@ -15,34 +15,24 @@ public class user   {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "userId")
     private int userId;
-
     @Column(name = "username")
     private String username;
-
     @Column(name = "password")
     private String password;
-
     @Column(name = "lastName")
     private String lastName;
-
     @Column(name = "firstName")
     private String firstName;
-
     @Column(name = "email")
     private String email;
-
     @Column(name = "birthday")
     private LocalDate birthday;
-
     @Column(name = "joinDate")
     private LocalDate joinDate;
-
     @Column(name = "subscriptionType")
     private String subscriptionType;
-
     @ElementCollection
     private List<String> preferences;
-
     public List<String> getPreferences() {
         return preferences;
     }

@@ -19,6 +19,7 @@ C:\Users\amara\IdeaProjects\FlickFlow\auth-service\src\main\java\com\FlickFlow\F
 C:\Users\amara\IdeaProjects\FlickFlow\auth-service\src\main\java\com\FlickFlow\FlickFlow\user\repository\SessionRepository.java
 C:\Users\amara\IdeaProjects\FlickFlow\auth-service\src\main\java\com\FlickFlow\FlickFlow\user\repository\userRepository.java
 C:\Users\amara\IdeaProjects\FlickFlow\auth-service\src\main\java\com\FlickFlow\FlickFlow\user\service\AuthenticationService.java
+C:\Users\amara\IdeaProjects\FlickFlow\auth-service\src\main\java\com\FlickFlow\FlickFlow\user\service\CustomUserDetails.java
 C:\Users\amara\IdeaProjects\FlickFlow\auth-service\src\main\java\com\FlickFlow\FlickFlow\user\service\MyUserDetailsService.java
 C:\Users\amara\IdeaProjects\FlickFlow\auth-service\src\main\java\com\FlickFlow\FlickFlow\user\service\roleService.java
 C:\Users\amara\IdeaProjects\FlickFlow\auth-service\src\main\java\com\FlickFlow\FlickFlow\user\service\userService.java

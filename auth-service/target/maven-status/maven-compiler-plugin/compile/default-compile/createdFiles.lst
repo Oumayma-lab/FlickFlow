@@ -1,6 +1,7 @@
 com\FlickFlow\FlickFlow\user\service\MyUserDetailsService.class
 com\FlickFlow\FlickFlow\config\JwtUtil$ClaimsResolver.class
 com\FlickFlow\FlickFlow\user\entity\user.class
+com\FlickFlow\FlickFlow\user\service\CustomUserDetails.class
 com\FlickFlow\FlickFlow\user\api\Request\AuthRequest.class
 com\FlickFlow\FlickFlow\user\service\userService.class
 com\FlickFlow\FlickFlow\config\SessionCleanupTask.class

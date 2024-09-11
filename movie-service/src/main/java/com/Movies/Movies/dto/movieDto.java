@@ -21,5 +21,4 @@ public class movieDto {
     private String posterPath;
     private String backdropPath;
     private String overview;
-
 }

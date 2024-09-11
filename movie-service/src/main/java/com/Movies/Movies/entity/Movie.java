@@ -25,28 +25,21 @@ public class Movie {
     @Column(name = "movie_name")
     private String movieName;
 
-
     @ManyToMany
     @JoinTable(name = "movie_genre",
             joinColumns = @JoinColumn(name = "movie_id"),
             inverseJoinColumns = @JoinColumn(name = "genre_id"))
     private Set<Genres> genres;
-
     @Column(name = "rating")
     private float rating;
-
     @Column(name = "overview")
     private String overview;
-
     @Column(name = "release_date")
     private String releaseDate;
-
     @Column(name = "tmbd_id")
     private int tmbdId;
-
     @Column(name = "poster_path")
     private String posterPath;
-
     @Column(name = "backdrop_path")
     private String backdropPath;
 }

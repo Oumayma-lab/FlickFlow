@@ -12,4 +12,6 @@ import java.util.Optional;
 public interface RatingRepository extends JpaRepository<Rating, Integer> {
     List<Rating> findByMovieId(int movieId);
     Optional<Rating> findByUserIdAndMovieId(int userId, int movieId);
+    List<Rating> findByUserId(int userId);
+
 }
